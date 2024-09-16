@@ -1,2 +1,1 @@
-# Hotel
-moj prvi folder
+# Hotel Web Seite
