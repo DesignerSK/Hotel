@@ -1,0 +1,786 @@
+*{  margin: 0; padding: 0; box-sizing: border-box;
+}
+
+.sve{  width: 1350px; margin: auto;  
+     position: relative; height: 790px;
+}
+nav{  width: 92%; margin: auto; -webkit-box-shadow: 0px 0px 3px 0px #000000; 
+    box-shadow: 0px 0px 3px 0px #000000; background-color: white;
+    display: flex; justify-content: space-between; align-items: center; 
+    padding: 10px 20px 10px 20px;  position: relative; top: 50px;
+    z-index: 1;border-radius: 5px;
+}
+.hhh{ position: absolute; right: 5%; display: none; 
+}
+
+#hamburger{ display: none; 
+}
+
+nav a{  text-decoration: none; color: rgb(78, 78, 78); font-weight: 600;  
+}
+
+nav a:hover{ cursor: pointer; color: rgb(65, 184, 119);
+}
+.logolijevo{  display: flex;  gap: 10px; color: rgb(65, 184, 119);
+}
+.logolijevo:hover{  cursor: pointer;
+}
+
+.logolijevo img{  padding: 5px; border: 1px dashed rgb(66, 212, 103);
+     border-radius: 50%;
+}
+.logodesno{  display: flex; gap: 20px;  align-items: center; 
+}
+
+.addpp{  background-color:rgb(65, 184, 119); color: white; 
+    padding: 7px 15px; 
+    border-radius: 5px;
+}
+.addpp:hover{  color: white;  background-color:rgb(60, 180, 100); 
+}
+
+.crtice{ width: 30px; height: 3px; background-color:rgb(153, 153, 153);
+     margin-bottom: 5px;
+}
+.crte{border: 2px solid rgb(206, 206, 206); padding: 5px 5px 1px 5px;
+    border-radius: 5px;
+}
+.crte:hover{ cursor: pointer;
+}
+
+.containerr{  display: flex; position: absolute; 
+    top: 0;   width: 100%; 
+}
+
+.lijevitext{ width: 50%; padding: 200px 50px;
+}
+.lijevitext h1{ font-weight: 750; font-size: 48px; color: rgb(4, 4, 80);
+}
+.drugaboja{ color: rgb(85, 202, 147) ;
+}
+.getstarted{ background-color: rgb(85, 202, 147) ; 
+    text-decoration: none;   color: white;
+    font-size: 18px; padding: 15px 45px 15px 45px; border-radius: 5px;
+}
+.getstarted:hover{ background-color:rgb(60, 180, 100); 
+}
+.addpp:hover{  color: white;  background-color:rgb(60, 180, 100); 
+}
+.lijevitext p{color: rgb(107, 107, 107); font-weight: 500; margin: 25px 0 50px 0;
+}
+.carosel{ width: 50%; position: relative;
+}
+.carosel img{ width: 100%; height: auto;  
+}
+
+.cetiripolja{ width: 100%;   background-color: rgb(85, 202, 147) ;
+    display: flex;   gap: 20px; justify-content: center;
+    padding: 28px;  position: absolute; bottom: 0;
+}
+
+.srch{ padding: 1.1rem 5rem 1.1rem 5rem;  border-radius: 5px; outline: none; border: none;
+    background-color: rgb(49, 104, 65); text-decoration: none; color: white;
+    font-size: 18px;
+}
+
+.unos{ outline: none;padding: 1rem 10rem 1rem 1rem; border-radius: 5px;
+    border: none;
+}
+
+.dva{  padding: 1rem 10rem 1rem 1rem;  border: none;outline: none;
+    border-radius: 5px;
+}
+
+
+/*   sekcija   dva  osam polja */
+
+.propertytypes{  text-align: center; padding-top: 80px;
+     width: 90%; margin: auto;
+}
+
+.propertytypes h1{ font-weight: 750; font-size: 48px; color: rgb(4, 4, 80);
+}
+
+.propertytypes p{color: rgb(107, 107, 107); font-weight: 500; margin: 25px 0 50px 0;
+}
+
+.polja{width: 100%;   justify-content: center;
+    display: flex; padding: 30px 30px 0 30px;  gap: 30px; 
+    padding: 20px 150px;  margin: auto; 
+}
+
+.item1{
+    padding: 25px;  background-color: rgba(203, 253, 216, 0.4);width: 315px;
+    border-radius: 5px;
+}
+
+.upolju{ background-color: white; text-align: center; align-items: center;
+    width: 100%; height: 100%; margin: auto; justify-content: center;padding-top: 15%;
+    border: 2px dashed rgba(203, 253, 216 ); border-radius: 5px; transition: 0.5s;
+}
+
+.upolju:hover{ background-color:rgb(85, 202, 147) ; cursor: pointer; color: white;
+}
+.upolju p:hover{  cursor: pointer; color: white;
+}
+.upolju p{ color: rgb(84, 182, 110);
+}
+.slikamala{ border: 1px dashed  rgb(65, 184, 119); width: 80px; 
+    height: 80px; margin: auto; border-radius: 50%;
+    padding: 15px; margin-bottom: 10px; background-color: white;
+}
+
+/*  ovo je 8 malih  polja    responziv*/
+
+@media screen and (max-width:1400px){
+    
+    .item1{ width: 320px; padding: 20px; gap: 25px;
+    }
+    .polja{ padding: 20px 50px;
+    }
+} 
+@media screen and (max-width:1100px){
+    .polja{ flex-wrap: wrap;
+    }
+} 
+@media screen and (max-width:787px){
+    
+    .item1{ width: 450px; height: 400px;
+    }
+    .upolju{ padding-top: 15%; font-size: 20px;
+    } 
+    .slikamala{ width: 110px; height: 110px; padding: 20px;
+    }
+    .slikamala img{ width: 100%; 
+    }
+    .upolju h5{ font-size: 30px;
+    }
+} 
+
+
+/*poligon    poligon    poligon    poligon */
+
+.slikatext{ display: flex; padding: 100px 0 100px 0; 
+    position: relative; width: 1350px; margin: auto;
+     z-index: -100; gap: 40px; 
+}
+
+.slikapoligon{ width: 500px;  height: 450px; padding-left: 40px;
+}
+
+.slikapoligon img{ width: 100%; height: 100%; object-fit: cover;
+    background-position: center;
+}
+
+.poligon{background-color: rgb(85, 202, 147);
+    clip-path: polygon(0 0, 25% 0, 79% 100%, 0% 100%);
+    width: 500px; height: 590px;
+    position: absolute; top: 60px;  z-index: -1;
+}
+    
+.nece{ background-color: rgb(85, 202, 147) ; text-decoration: none;
+     color: white; 
+    font-size: 18px; padding: 15px 45px 15px 45px; border-radius: 5px; 
+}
+
+.nece:hover{ background-color:rgb(60, 180, 100);  cursor: pointer;
+}
+.poligtext{  padding-right: 20px;
+    margin: auto; width: 80%;  
+}
+
+.poligtext h1{ font-weight: 750; font-size: 48px; 
+    color: rgb(4, 4, 80); margin-bottom: 20px; margin-top: 80px;
+}
+
+.doletext{ margin-bottom: 40px;
+}
+
+.poligtext p{color: rgb(107, 107, 107); font-weight: 500; 
+
+}
+.tacka{ color: rgb(85, 202, 147) ; font-size: 18px;
+}
+
+.poligonslika img{ width: 100%;  object-fit: cover;
+}
+
+.poligonslika{ width: 80%; margin: auto; height: auto;
+}
+
+
+/* poligon   responziv */
+
+@media screen and (max-width:1450px){
+    .slikatext{ width: 1250px; margin: auto;
+    }
+} 
+@media screen and (max-width:1353px){
+    .slikatext{ width: 1000px; margin: auto;
+    }
+} 
+
+@media screen and (max-width:1000px){
+    .slikatext{ display: block; width: 80%;
+        margin: auto;
+    }
+    .poligtext h1{ font-weight: 600; font-size: 42px; 
+    }
+    .poligon{ height: 540px;
+    }
+}
+@media screen and (max-width:620px){
+    
+    .slikapoligon{ width: 430px;  height: auto; 
+    }
+    .slikapoligon img{ width: 100%;
+    }
+    .poligon{ height: 360px; margin: auto; width: 400px;   
+    }
+}
+
+
+/* feld    feld    kuce    kuce */
+
+.iznadkuce{ display: flex;  justify-content: space-between;
+    align-items: center; padding: 0 20px 0 20px; 
+}
+.iznadkucetext{  width: 60%; margin-top: 20px;
+}
+.iznadkucetext h1{ font-weight: 750; font-size: 48px; color: rgb(4, 4, 80);
+}
+
+.iznadkucetext p{color: rgb(107, 107, 107); font-weight: 500; 
+}
+.kucapolja{ background-color: rgb(85, 202, 147); color: rgb(255, 255, 255);
+    text-decoration: none;  padding: 8px 12px; border-radius: 5px;
+}
+.kucapoljadva{ border: 1px solid rgb(85, 202, 147) ; color: rgb(88, 88, 88);
+    text-decoration: none;  padding: 8px 12px;border-radius: 5px;
+    transition: 0.5s;
+}
+
+.kucapoljadva:hover{ background-color: rgb(85, 202, 147); 
+    color: rgb(255, 255, 255);
+}
+
+.kuce{ width: 1350px; height: auto;
+    margin: auto; 
+}
+.prvired{ display: flex;    width: 1350px;
+}
+
+.ispodkuca{background-color: rgb(255, 255, 255); border-radius: 0 0 10px 10px;
+}
+
+.dolar{padding: 15px 0 0 20px;
+}
+.dolar{padding: 15px 0 0 20px;
+}
+.prvih5{font-weight: 700;color:rgb(65, 184, 119);
+}
+.drugih5{font-weight: 700;
+}
+.drugih5:hover{cursor: pointer;color:rgb(54, 138, 92);
+}
+.kuca{width: 500px; padding: 20px; position: relative;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .08);
+}
+
+.kuca img{border-radius:  10px 10px 0 0; width: 100%;
+    transition: filter 0.3s ease;
+       
+}
+.kuca:hover img{ cursor: pointer; 
+    filter: brightness(70%);    
+}
+
+.forsell {color: white; background-color:rgb(65, 184, 119); width: 80px;
+    position: absolute;  top: 40px; left: 40px; padding: 5px 13px;
+    border-radius: 5px; font-weight: 500; z-index: 100;
+}
+.apartment {color:rgb(65, 184, 119); background-color:rgb(255, 255, 255); 
+    width: 120px;
+    position: absolute;  bottom: 168px; left: 40px; padding: 5px 13px 15px 13px ;
+    border-radius: 5px; font-weight: 500;
+}
+
+.podnozje{display: flex; 
+    justify-content: space-around; border-top: 1px dashed rgb(65, 184, 119);
+}
+.sqft{  color: rgb(107, 107, 107);
+     border-right: 1px dashed rgb(65, 184, 119) ; padding-right: 20px;
+     margin-top: 15px; 
+}
+.bath{  border-right: none;
+}
+
+i{  color:rgb(65, 184, 119); margin-right: 5px;font-size: 20px;
+}
+.batton{ text-align: center; margin-top: 35px; margin-bottom: 50px;
+}
+.baton{ text-decoration: none;  
+    color: white; font-weight: 600; background-color: rgb(65, 184, 119);
+     padding: 15px 50px ; border-radius: 7px; transition: 0.3s;
+}
+.baton:hover{cursor: pointer;
+}
+
+@media screen and (max-width:1380px){
+    .kuce{ width: 1200px; margin: auto;
+    }
+    .prvired{ width: 100%; 
+    }
+    .kuca{  width: 500px ;
+    }
+    .iznadkuce{ width: 1200px; margin: auto; 
+    }  
+}
+
+@media screen and (max-width:1220px){
+    .kuce{ width: 1000px; margin: auto;
+    }
+    .iznadkuce{ width: 1000px; margin: auto;   
+    }
+}
+
+@media screen and (max-width:1020px){
+    .kuce{ width: 100%;
+    } 
+    .prvired{ flex-wrap: wrap; gap: 10px;
+        justify-content: center;  margin-bottom: 20px;
+    }
+    .kuca{  width: 450px ; margin: auto;
+    }
+    .iznadkuce{ width: 95%; margin: auto; 
+        
+    }
+}
+@media screen and (max-width:770px){
+    .iznadkuce{ display: block;  margin: 0 0 40px 50px;
+    }
+}
+
+@media screen and (max-width:1230px){
+    
+    .carosel img{ width: 100%; height: 600px;  
+    }
+} 
+@media screen and (max-width:960px){
+    .lijevitext{ width: 50%; padding: 80px 50px;
+    }
+    .lijevitext h1{ font-size: 42px;
+    }
+    .carosel img{ width: 100%; height: 500px;  object-fit: cover;
+    }
+    
+    .sve{width: 100%;
+    }
+    nav{  width: 100%;  -webkit-box-shadow: 0px 0px 3px 0px #000000; 
+        box-shadow: 0px 0px 3px 0px #000000; background: rgba(255, 255, 255, 0.5);
+        display: block; justify-content: space-between; align-items: center; 
+        padding: 10px 20px 10px 20px;  text-align: center;
+         position: relative; top: 0;  border-radius: 1px;
+    }
+    .logolijevo{  display: flex;  text-align: center;
+    }
+    .logodesno{  display: none;
+          /*sada se ne vide a elementi*/
+    }
+    .hhh{  display: block;     /*hamburger stavimo da se vidi*/
+    }
+    nav input:checked~.logodesno{  display: block; margin-top: 20px; height: 150px; 
+        
+
+        /*kada na H stisnemo da iskoci .logodesno */
+    }
+    .containerr{  position: absolute; top: 77px; 
+    }
+    .addpp{  display: none;
+    }
+} 
+
+.covjektextokolo{  width:1350px; margin: auto;
+     padding: 20px;  margin-top: 50px; border-radius: 5px;
+     background-color: rgba(203, 253, 216, 0.4);
+}
+.covjektext{  padding: 20px; background-color: white;
+    display: flex; justify-content: center; border: 1px dashed  rgb(85, 202, 147) ;
+    gap: 30px;  border-radius: 5px; align-items: center;
+}
+
+.covjekslika{ width: 550px; height: 400px; 
+}
+.covjekslika img{ width: 100%; height: 100%; object-fit: cover;
+    border-radius: 10px;
+}
+.covjektextt h1{ font-weight: 750; font-size: 48px; color: rgb(4, 4, 80);
+}
+.covjektextt p{ color: rgb(107, 107, 107); font-weight: 500; margin: 25px 0 50px 0;
+}
+.make{ background-color: rgb(85, 202, 147) ; text-decoration: none; color: white;
+    font-size: 18px; padding: 15px 45px 15px 15px; border-radius: 5px; margin-right: 10px;
+    
+}
+.makee{ background-color: rgb(11, 59, 73) ; text-decoration: none; color: white;
+    font-size: 18px; padding: 15px 45px 15px 15px; border-radius: 5px;
+}
+
+.bxs-phone-call{ color: white;
+}
+.bxs-calendar{ color: white;
+}
+
+@media screen and (max-width:1350px){
+    .covjektextokolo{  width:1200px; margin: auto;
+   }
+}
+
+@media screen and (max-width:1220px){
+    .covjektextokolo{  width:1000px; margin: auto;
+   }
+}
+@media screen and (max-width:1050px){
+    .covjektextokolo{ width: 90%; margin: auto;  margin-top: 70px;
+   }
+    
+   .covjektextt h1{ font-weight: 650; font-size: 40px; margin-top: 30px;
+   }
+   .covjekslika{ width: 100%; height: auto;
+   }
+   .covjektext{  width: 100%;
+   }
+   .make{   font-size: 14px;padding: 10px 20px 10px 20px; 
+   }
+   .makee{ font-size: 14px; padding: 10px 20px 10px 20px;
+   }
+}
+
+@media screen and (max-width:800px){
+    .covjektextokolo{ position: relative; top: 50px;
+    }
+    .covjektext{  display: block; width: 85%; margin: auto;
+        
+    }
+    .covjektextokolo{  margin-top: 100px; width: 85%;
+        margin: auto; 
+    }
+    .covjektextt h1{ font-weight: 600; font-size: 32px; 
+    }
+    
+    .make{   font-size: 14px;padding: 10px 5px 10px 5px; 
+    }
+    .makee{ font-size: 14px; padding: 10px 5px 10px 5px;
+    }
+}
+
+/* ljudi   ljudi     ljudii */
+
+.ljudi{ display: flex;  width: 1350px;  margin: auto;gap: 30px;
+      justify-content: center;
+}
+.prviljudi{ display: flex;    box-shadow: 0 0 30px rgba(0, 0, 0, .08);
+    gap: 50px;   
+}
+.prvicovjek{ width: 280px; height: 300px; 
+}
+
+.prvicovjek img{ width: 100%; height: 100%;
+}
+.ljuditext{ text-align: center; background-color: whitesmoke;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .08); 
+}
+
+.ikonicezaljude i{  padding: 8px; 
+    border-radius: 50%;  position: relative;  bottom: 20px;
+    background-color: white;
+}
+.nnnn{  margin-bottom: -2px;
+}
+
+.naslovv{margin: auto;  margin-top: 160px ; margin-bottom: 50px;
+    width: 50%; text-align: center;
+    
+}
+@media screen and (max-width:800px){
+    .naslovv{ margin-top: 100px ;
+    }
+}
+
+@media screen and (max-width:1016px){
+    .naslovv{ margin-top: 100px ;
+    }
+}
+.ljuditext h1{  margin-top: 70px;
+    font-weight: 750; font-size: 48px; color: rgb(4, 4, 80);
+}
+.ljuditext p{  
+    color: rgb(107, 107, 107); font-weight: 500; width: 60%; 
+    margin: auto;  margin-bottom: 30px;
+}
+.naslovv h1{  
+    font-weight: 750; font-size: 48px; color: rgb(4, 4, 80);
+}
+.naslovv p{  
+    color: rgb(107, 107, 107); font-weight: 500; 
+}
+
+/*  buton   slikeee   buton*/
+
+.butonslika{ 
+     display: flex;  width: 1350px; margin: auto; margin-top: 20px;
+    align-items: center;gap: 25px;  padding-bottom: 50px;
+    
+}
+#lijevastrelica{ background-color:   rgb(85, 202, 147);
+    padding: 10px; font-size: 30px;border-radius: 50%; color: white;
+}
+#lijevastrelica:hover{ cursor: pointer;
+}
+
+.sss{ width: 80px; height: 80px;  border-radius: 10px;   
+}
+
+.slikasss{ display: flex; align-items: center; gap: 20px;  
+}
+
+.poljeo{ background-color: aliceblue; padding: 15px; 
+    border-radius: 10px;background-color: rgba(203, 253, 216, 0.4);
+}
+
+.poljeee{ padding: 15px; border-radius: 10px;background-color: white;
+    border: 1px dashed  rgb(85, 202, 147) ; color: rgb(107, 107, 107);
+}
+.poljeee h5{  color: rgb(0, 0, 0);
+}
+.stst{   line-height: .3;
+}
+
+@media screen and (max-width:1380px){
+    .butonslika{  width: 90%; margin: auto; 
+   }
+}
+@media screen and (max-width:1000px){
+    .poljezwei{ display: none;  
+   }
+}
+
+@media screen and (max-width:1350px){
+    .ljudi{ width: 1200px; margin: auto;
+    }
+    .prvicovjek{ width: 250px; height: 250px; 
+    }
+}
+@media screen and (max-width:1220px){
+    .ljudi{ width: 950px; margin: auto;
+    }
+    .prvicovjek{ width: 230px; height: 230px; 
+    }
+    .prviljudi{ gap: 10px;  
+    }
+}
+
+@media screen and (max-width:1015px){
+    .ljudi{ width: 100%;  display: block; margin-top: 40px;
+    }
+  .prviljudi{ display: flex; justify-content: center; gap: 30px;
+  }
+  
+  .prvicovjek{ margin-bottom: 120px; padding-bottom: 35px;
+    width: 300px; height: 330px; 
+  }
+  .ljuditext{padding-bottom: 10px; 
+  }
+}
+@media screen and (max-width:710px){
+    .ljudi{ width: 80%; margin: auto;  
+         
+     }
+     .prviljudi{ display: block;    
+    }
+    .prvicovjek{ width: 60%; margin: auto;  height: auto;
+    }
+}
+
+
+@media screen and (max-width:1350px){
+    .slikatext{ width: 100%;
+    }
+    .sve{width: 100%;
+    }
+    .cetiripolja{width: 100%;
+    }
+} 
+@media screen and (max-width:1250px){
+    .srch{ padding: 1.1rem 5rem 1.1rem 5rem; 
+    }
+    .unos{ padding: 1rem 7rem 1rem 1rem;   
+    }
+    .dva{  padding: 1rem 7rem 1rem 1rem; 
+    }
+} 
+
+@media screen and (max-width:1100px){
+    .srch{ padding: 1.1rem 3rem 1.1rem 3rem; 
+    }
+    .unos{ padding: 1rem 3rem 1rem 3rem;   
+    }
+    .dva{  padding: 1rem 3rem 1rem 3rem; 
+    }
+} 
+
+
+@media screen and (max-width:950px){
+    .srch{ padding: 1rem 2rem 1rem 2rem; 
+    }
+    .unos{ padding: 1rem 2rem 1rem 2rem;   
+    }
+    .dva{  padding: 1rem 2rem 1rem 2rem; 
+    }
+} 
+@media screen and (max-width:880px){
+    .srch{ padding: 1rem 2rem 1rem 2rem; 
+    }
+    .unos{ padding: 1rem 0.6rem 0.5rem 1rem;   
+    }
+    .dva{  padding: 1rem 1rem 1rem 1rem;   
+    }
+} 
+
+
+@media screen and (max-width:750px){
+    .sve{  height: 1250px;
+   }
+    .containerr{   flex-direction: column-reverse;
+    }
+    .lijevitext{ width: 50%; padding: 80px 50px;
+    }
+    .lijevitext { text-align: left;  width: 100%;
+    }
+    .carosel{ width: 100%; height: 500px;  object-fit: cover;
+    }
+    .carosel img{ width: 100%; height: 500px;  object-fit: cover;
+    }
+    .cetiripolja{ padding: 25px 0 40px 0;
+        display: block;  text-align: center; 
+    }
+    .unos{ padding: 1rem 15rem 1rem 1rem;  margin-bottom: 5px; 
+    }
+    
+    .dva{  padding: 1rem 18rem 1rem 1rem; 
+    }
+    .dvaa{  padding: 1rem 20.4rem 1rem 1rem; margin: 5px 0 20px 0;
+    }
+    .srch{ padding: 1rem 12rem 1rem 12rem;  
+    }
+}
+
+@media screen and (max-width:583px){
+    .sve{  height: 1310px;
+    }
+}
+
+
+/*footer    footer  footer     */
+
+.futer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr ));
+    margin: auto;
+    max-width: 1350px; /* Promenjeno na max-width */
+    height: auto; /* Ova visina će biti fiksna, možete je promeniti prema potrebama */
+    padding: 1rem; /* Dodajemo malo prostora unutar kontejnera */
+}
+
+.cards { background-color: rgb(11, 55, 80);
+    padding: 1rem;
+    text-align: center;
+}
+.cards h6{  color: rgb(0, 0, 0); 
+}
+.cards p {  color: rgb(201, 201, 201); font-size: 16px; font-weight: 450; 
+}
+.razmak{ margin-bottom: 1px; 
+}
+.razmak:hover{ font-size: 18px; cursor: pointer;
+}
+.rrr{ margin-bottom: 10px; 
+}
+.aaa {  text-align: left;
+}
+#ikonicemale{ border: 1px solid rgb(255, 255, 255); border-radius: 50%; 
+    padding: 5px; color: white; transition: 0.3s;
+}
+#ikonicemale:hover{ color:  rgb(85, 202, 147); 
+    background-color: white; cursor: pointer;
+}
+
+.male{  margin-bottom: 10px;
+}
+.slicice{  display: flex; gap: 10px;
+}
+.slicicem { width: 80px; height: 50px; border: 4px solid white;
+    border-radius: 5px;
+}
+.slicicem img { width: 100%; height: 100%;
+}
+.zadnjeaaa a{ text-decoration: none;color: rgb(92, 92, 92);
+     font-weight: 500;
+}
+.zadnjeaaa  :nth-child(1){ 
+    border-right: 1px solid rgb(37, 37, 37); margin-right: 5px;
+    padding-right: 5px; 
+}
+.zadnjeaaa  :nth-child(2){ 
+    border-right: 1px solid rgb(37, 37, 37); margin-right: 5px;
+    padding-right: 5px; 
+}
+.zadnjeaaa  :nth-child(3){ 
+    border-right: 1px solid rgb(37, 37, 37); margin-right: 5px;
+    padding-right: 5px; 
+}
+.zadnjaslova{ text-decoration: underline;cursor: pointer;
+    color: rgb(37, 37, 37); transition: 0.3s;
+}
+
+.zadnje { display: flex; justify-content: space-around;
+    color: rgb(92, 92, 92); font-weight: 500;
+}
+.inputt{ outline: none; border: 1px solid  rgb(201, 201, 201);
+    background: none; padding: 15px 40px 15px 10px; width: 100%;
+    position: relative;border-radius: 5px;
+    
+}
+.ooo{position: absolute;text-decoration: none; background-color:  rgb(85, 202, 147); 
+    padding: 5px 10px; margin-top: 10px; margin-left: -90px; font-size: 16px;
+    color: white;  border-radius: 5px;  
+}
+
+
+@media screen and (max-width:930px){
+    .futer { display: grid;margin: auto;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr ));
+    }
+    .inputt{  width: 90%;
+    }
+}
+
+@media screen and (max-width:750px){
+    .zadnje { display: block; font-size: 16px; text-align: center;
+        background-color: #000000; width: 100%; padding: 10px;
+    }
+}
+
+@media screen and (max-width:720px){
+    .futer { display: grid;margin: auto;  
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr ));  
+    }
+    .inputt{  width: 60%;
+    }
+    .slicicem { width: 150px; height: 100px; 
+    }
+}
+@media screen and (max-width:570px){
+    .slicicem { width: 120px; height: 80px; 
+    } 
+}
